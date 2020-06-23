@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-content>
+    <p>Registrati a JustMeet</p>
+    <form>    
+      <ion-item lines="full">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="text" #email required></ion-input>
+      </ion-item> 
+  
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" #password required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text" #name required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Cognome</ion-label>
+        <ion-input type="text" #surname required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Città</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col> 
+        <ion-button color="dark" (click)="signUp(email, password)">Singup</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+</ion-content>
+

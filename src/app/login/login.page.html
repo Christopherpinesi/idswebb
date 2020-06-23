@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+    <ion-content fullscreen>
+      <p>Accedi a JustMeet</p>
+      <form>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" >Password</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+      </form>
+    <ion-button color="dark" ion-button type="submit" (click)="logIn(email, password)">
+      <ion-label>Login</ion-label>
+    </ion-button>
+    <ion-button  color="dark"(click)="Singup()">
+      <ion-label >Sing up</ion-label>
+    </ion-button>
+    </ion-content>
+  </ion-header>
